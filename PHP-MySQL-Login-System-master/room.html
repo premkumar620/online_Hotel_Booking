@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Purchase</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href=".../css/main.css"> -->
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-color: #046492;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-4 {
+            width: 33.33%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .room-card {
+            background-color: #DB9F92;
+            border: 1px solid #140808;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+
+        .room-card:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .room-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+            padding: 5px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .mt-5 {
+            margin-top: 50px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="nav">
+        <ul class="ul">
+            <a>
+                <li class="li"></li>
+            </a>
+            <a>
+                <li class="li"></li>
+            </a>
+            <a>
+                <li class="li">HOME</li>
+            </a>
+            <a>
+                <li class="li">ROOMS</li>
+            </a>
+            <a href="contact.html">
+                <li class="li">CONTACT US</li>
+            </a>
+
+            <a href="./logout.php">
+                <li class="li">LOGOUT</li>
+            </a>
+        </ul>
+        <input type="text" class="search" name="search" placeholder="Search">
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- single bed Card -->
+            <div class="col-md-4">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="single bed Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Single Bed</h5>
+                        <p class="card-text">A cozy single bed for a comfortable stay.</p>
+                        <p class="card-text"><strong>Price:</strong> $100 per night</p>
+                        <a href="#" class="btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card">
+                    <img src="https://media.istockphoto.com/id/1652526053/photo/a-double-bed.webp?b=1&s=170667a&w=0&k=20&c=Luhtk1Uf9OD5gOCMrM-sUrYYzzjWBKyNtuq7c5Cs4lQ="
+                        alt="single bed Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Single Bed</h5>
+                        <p class="card-text">A cozy single bed for a comfortable stay.</p>
+                        <p class="card-text"><strong>Price:</strong> $100 per night</p>
+                        <a href="#" class="btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1631049035182-249067d7618e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdGVsJTIwcm9vbXN8ZW58MHwwfDB8fHww"
+                        alt="single bed Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Single Bed</h5>
+                        <p class="card-text">A cozy single bed for a comfortable stay.</p>
+                        <p class="card-text"><strong>Price:</strong> $100 per night</p>
+                        <a href="#" class="btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- double bed Card -->
+            <div class="col-md-4">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWwlMjByb29tc3xlbnwwfDB8MHx8fDA%3D"
+                        alt="double bed Image">
+                    <div class=" card-body">
+                        <h5 class="card-title">Double Bed</h5>
+                        <p class="card-text">A spacious double bed for a relaxing stay.</p>
+                        <p class="card-text"><strong>Price:</strong> $150 per night</p>
+                        <a href="#" class="btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card">
+                    <img src="https://media.istockphoto.com/id/168704591/photo/luxurious-two-bed-hotel-room-with-hardwood-floors.webp?b=1&s=170667a&w=0&k=20&c=TttpiOQDv6ItKr7LINaU8mKGbpv0fxTd2lh7S-23E_A="
+                        alt="double bed Image">
+                    <div class=" card-body">
+                        <h5 class="card-title">Double Bed</h5>
+                        <p class="card-text">A spacious double bed for a relaxing stay.</p>
+                        <p class="card-text"><strong>Price:</strong> $150 per night</p>
+                        <a href="#" class="btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1619128395560-8a749ac9926d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsJTIwcm9vbXN8ZW58MHwwfDB8fHww"
+                        alt="double bed Image">
+                    <div class=" card-body">
+                        <h5 class="card-title">Double Bed</h5>
+                        <p class="card-text">A spacious double bed for a relaxing stay.</p>
+                        <p class="card-text"><strong>Price:</strong> $150 per night</p>
+                        <a href="#" class="btn-primary">Book Now</a>     
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1619128395560-8a749ac9926d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsJTIwcm9vbXN8ZW58MHwwfDB8fHww"
+                        alt="double bed Image">
+                    <div class=" card-body">
+                        <h5 class="card-title">Triple Bed</h5>
+                        <p class="card-text">A spacious Triple bed for a relaxing stay.</p>
+                        <p class="card-text"><strong>Price:</strong> $200 per night</p>
+                        <a href="#" class="btn-primary">Book Now</a>     
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1619128395560-8a749ac9926d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsJTIwcm9vbXN8ZW58MHwwfDB8fHww"
+                        alt="double bed Image">
+                    <div class=" card-body">
+                        <h5 class="card-title">Triple Bed</h5>
+                        <p class="card-text">A spacious Triple bed for a relaxing stay.</p>
+                        <p class="card-text"><strong>Price:</strong> $200 per night</p>
+                        <a href="#" class="btn-primary">Book Now</a>     
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1619128395560-8a749ac9926d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsJTIwcm9vbXN8ZW58MHwwfDB8fHww"
+                        alt="double bed Image">
+                    <div class=" card-body">
+                        <h5 class="card-title">Triple Bed</h5>
+                        <p class="card-text">A spacious Triple bed for a relaxing stay.</p>
+                        <p class="card-text"><strong>Price:</strong> $200 per night</p>
+                        <a href="#" class="btn-primary">Book Now</a>     
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
